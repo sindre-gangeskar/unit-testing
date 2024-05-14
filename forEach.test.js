@@ -1,6 +1,6 @@
 const forEach = require('./forEach');
 
-const mockCallback = jest.fn((x) => 'Teacher ' + x);
+const mockCallback = jest.fn((x) => `Teacher ${x}`);
 
 test('forEach mock function', () => {
     forEach([ 'John', 'The Man', 'Doe' ], mockCallback);
